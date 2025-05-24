@@ -11,6 +11,14 @@
 <title></title>
 	title of the tab on chrome, otherwise, the name is the link
 
+inline element (inside paragraph, not break the line, not create new block)
+	<strong></strong>
+	<em></em>
+
+block element (will break the line)
+	<p></p>
+	<h1></h1>
+
 
 
 
