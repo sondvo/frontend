@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="author" content="Son Vo">
+		<meta name="viewport" content="width=device-width">
+		<meta name="descriptions" content="This page contains all the things I am learning how to create as I learn HTML and CSS">
+
+		<!-- Title of the tab -->
+		<title>My first web page</title>
+
+		<!-- Icon of the tab -->
+		<!-- rel : relationtionship -->
+		<link rel="icon" href="images/gene_icon.png">
+
+		<!-- define a CSS Style for reusable-->
+		<!-- Manually add style -->
+		<style>
+			/* CSS-style class start with "." (dot) */
+			.indent {
+				margin-left: 2em;
+				display: inline-block;
+			}
+		</style>
+		<!-- OR link from a css file -->
+		<link rel="stylesheet" href="styles/styles.css">
+
+	</head>
+
+	<body>
+		<img src="images/github_img.jpeg" alt="My test image" width="200" height="200">
+		<!-- here all the marking up text -->
+		<!-- Heading -->
+		<h1>Hello World!</h1>
+		<hr>
+
+		<!-- Navigation, just like an outline -->
+		<!-- Link to <section> below -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#html">Learn html</a>
+				</li>
+				<li>
+					<a href="#vacation">Planning for a vacation</a>
+				</li>
+				<li>
+					<a href="#avoid">Avoid destination</a>
+				</li>
+			</ul>
+		</nav>
+		<hr>
+
+		<section id="html">
+			<h2>I'm ready to learn html</h2>
+			<p>This is my first web page.</p>
+
+			<h3>My Daily Schedule</h3>
+			<p>Let me tell you how:</p>
+			<ul>
+				<li>I learn more about web dev.</li>
+				<li>I plan out my schedule</li>
+				<li>I use resources from <abbr title="Mozilla Developer Network">
+					<a href="http://developer.mozilla.org/en-US/">MDN</a>
+				</abbr></li>
+			</ul>
+		</section>
+
+		<hr>
+
+		<section id="vacation">
+			<h2>I am also planning a vacation</h2>
+			<p>I've been working hard and <em>really need a getaway.</em></p>
+			<p>I love in LS so I want to visit a beach.</p>
+			<h3>Places I'd like to visit</h3>
+			<ul>
+				<li>I've heard good things about the Caribbean.</li>
+				<li>
+					<p>I've heard good things about going here:</p>
+					<address>
+						testing<br>
+						xyz<br>
+						855513<br>
+					</address>
+				</li>
+			</ul>
+		</section>
+
+		<hr>
+
+		<section id="avoid">
+			<h2>Places I'd like to avoid</h2>
+			<!-- description list <dl> -->
+			<dl>
+				<!-- terms, names <dt> -->
+				<dt>North Pole</dt>
+				<!-- describe each term <dd> -->
+				<dd>I heard this is <strong>cold!</strong></dd>
+
+				<dt>South Pole</dt>
+				<dd>I heard this is also cold</dd>
+
+				<dt>Mountain Tops</dt>
+				<dd>This is also cold.</dd>
+			</dl>
+		</section>
+
+		<hr>
+		<!-- target="_blank" means open in new tab -->
+		&lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Son Vo</a> &gt;&gt;&gt;
+
+		<p>
+			<a href="#"> Back to Top </a>
+		</p>
+
+	</body>
+</html>
