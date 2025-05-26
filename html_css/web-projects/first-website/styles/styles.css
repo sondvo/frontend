@@ -1,4 +1,20 @@
-/* set colors for all <p> element */
-p {
-  color: black
+html {
+  font-size: 15px;
+}
+
+body {
+  color: black;
+}
+
+a {
+  color: darkblue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover, a:active {
+  color: red;
+  font-style: oblique;
 }

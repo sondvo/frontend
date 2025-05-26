@@ -11,9 +11,10 @@
 		<title>My first web page</title>
 
 		<!-- Icon of the tab -->
+		<!-- rel : relationtionship -->
 		<link rel="icon" href="images/gene_icon.png">
 
-		<!-- defind a CSS Style for reusable-->
+		<!-- define a CSS Style for reusable-->
 		<!-- Manually add style -->
 		<style>
 			/* CSS-style class start with "." (dot) */
@@ -22,19 +23,20 @@
 				display: inline-block;
 			}
 		</style>
-		<!-- of link from a css file -->
+		<!-- OR link from a css file -->
 		<link rel="stylesheet" href="styles/styles.css">
 
 	</head>
 
 	<body>
-		<img src="images/github_img.jpeg" alt="My test image" width="200" height="200"/>
+		<img src="images/github_img.jpeg" alt="My test image" width="200" height="200">
 		<!-- here all the marking up text -->
 		<!-- Heading -->
 		<h1>Hello World!</h1>
-
 		<hr>
 
+		<!-- Navigation, just like an outline -->
+		<!-- Link to <section> below -->
 		<nav>
 			<ul>
 				<li>
@@ -48,7 +50,6 @@
 				</li>
 			</ul>
 		</nav>
-
 		<hr>
 
 		<section id="html">
@@ -56,7 +57,7 @@
 			<p>This is my first web page.</p>
 
 			<h3>My Daily Schedule</h3>
-			<p>Let me tell you how:
+			<p>Let me tell you how:</p>
 			<ul>
 				<li>I learn more about web dev.</li>
 				<li>I plan out my schedule</li>
@@ -64,7 +65,6 @@
 					<a href="http://developer.mozilla.org/en-US/">MDN</a>
 				</abbr></li>
 			</ul>
-			</p>
 		</section>
 
 		<hr>
@@ -91,8 +91,11 @@
 
 		<section id="avoid">
 			<h2>Places I'd like to avoid</h2>
+			<!-- description list <dl> -->
 			<dl>
+				<!-- terms, names <dt> -->
 				<dt>North Pole</dt>
+				<!-- describe each term <dd> -->
 				<dd>I heard this is <strong>cold!</strong></dd>
 
 				<dt>South Pole</dt>
@@ -104,7 +107,12 @@
 		</section>
 
 		<hr>
-		&lt;&lt;&lt; &copy; <a href="about.html">Son Vo</a> &gt;&gt;&gt;
+		<!-- target="_blank" means open in new tab -->
+		&lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Son Vo</a> &gt;&gt;&gt;
+
+		<p>
+			<a href="#"> Back to Top </a>
+		</p>
 
 	</body>
 </html>
