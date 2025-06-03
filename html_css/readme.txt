@@ -23,3 +23,31 @@ Self-closed elements: contain small contents (Void elements)
 
 paragraph <p>
 bullet points <li>
+
+
+
+STRUCTURE:
+
+head
+/head
+
+body
+	header
+		h1
+	/header
+
+	main
+		article (the most independent part, do not require other articles for understanding)
+			section (should have relationship with other sections within article)
+				p (just a paragraph)
+				/p
+
+				ul (list)
+				/ul
+			/section
+		/article
+	/main
+
+	footer
+	/footer
+/body
