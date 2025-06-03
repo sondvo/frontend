@@ -1,5 +1,5 @@
 html {
-    font-size: 22px;
+    font-size: 15px;
 }
 
 body {
@@ -16,4 +16,24 @@ th, td, caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: separate;
     padding: 0.5rem;
+}
+
+a {
+  color: darkblue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover, a:active {
+  color: red;
+  font-style: oblique;
+}
+
+table, tr, th, td, caption {
+  border: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
 }
