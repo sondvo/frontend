@@ -46,7 +46,7 @@
 						<a href="#vacation">Planning for a vacation</a>
 					</li>
 					<li>
-						<a href="#avoid">Avoid destination</a>
+						<a href="#contact">Contact Me</a>
 					</li>
 				</ul>
 			</nav>
@@ -139,7 +139,7 @@
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan="23">And that's what I do everyday, 5 days a week.Just eat, sleep, coded .. and recharge!</td>
+								<td colspan="3">And that's what I do everyday, 5 days a week. Just eat, sleep, code... and recharge!</td>
 							</tr>
 						</tfoot>
 					</table>
@@ -186,9 +186,8 @@
 				</section>
 
 
-				<!-- <article id="avoid"> -->
 				<section>
-					<h3>Places I'd like to avoid</h2>
+					<h3>Places I'd like to avoid</h3>
 					<!-- description list <dl> -->
 					<dl>
 					<!-- terms, names <dt> -->
@@ -203,7 +202,130 @@
 					<dd>This is also cold.</dd>
 					</dl>
 				</section>
+
 			</article>
+
+			<hr>
+			<article id="contact">
+				<h2>Contact me</h2>
+				<p>I'd really like to hear from you!</p>
+				<form action="https://httpbin.org/get" method="get">
+					<fieldset>
+						<legend>Personal Info</legend>
+						<p>
+							<label for="firstName">First Name:</label>
+							<input type="text" name="firstName" id="firstName" placeholder="Son" autocomplete="on" required>
+						</p>
+						<p>
+							<label for="lastName">Last Name:</label>
+							<input type="text" name="lastName" id="lastName" placeholder="Vo" autocomplete="on" required>
+						</p>
+						<p>
+							<label for="password">Password:</label>
+							<input type="password" name="password" id="password" placeholder="secret" required>
+						</p>
+						<p>
+							<label for="phone">Phone Number:</label>
+							<input type="tel" name="phone" id="phone" placeholder="111-111-1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+						</p>
+						<p>
+							<label for="YoB">Year of Birth:</label>
+							<input type="number" name="YoB" id="YoB" placeholder="2000" min="1900" max="2025" step="1" required >
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Favorite coffee (Option1)</legend>
+						<p>
+							<label for="coffee">Favorite Coffee:</label>
+							<select name="coffee" id="coffee" required>
+								<optgroup label="Black coffees">
+									<option value="regular coffee">Regular Coffee</option>
+									<option value="capuchino">Capuchino</option>
+									<option value="americano">Americano</option>
+								</optgroup>
+								<optgroup label="Coffees with milk">
+									<option value="dense milk coffee">Dense Milk Coffee</option>
+									<option value="latte">Latte</option>
+								</optgroup>
+								<option value="other">Others</option>
+							</select>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Favorite coffee (Option2)</legend>
+						<p>
+							<label for="coffee">Favorite Coffee:</label>
+							<input type="text" name="coffee" id="coffee" list="coffee-list">
+							<datalist id="coffee-list">
+								<option value="regular coffee">
+								<option value="capuchino">
+								<option value="americano">
+								<option value="dense milk coffee">
+								<option value="latte">
+								<option value="other">
+							</datalist>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Favorite food</legend>
+						<!-- if all same "name" -> only choose one
+						if different "name" -> choose multiple -->
+						<p>
+							<input type="radio" name="food" id="tacos" value="tacos">
+							<label for="tacos">Tacos</label>
+						</p>
+						<p>
+							<input type="radio" name="food" id="hambergur" value="hambergur">
+							<label for="hambergur">Hambergur</label>
+						</p>
+						<p>
+							<input type="radio" name="food" id="noodles" value="noodles">
+							<label for="noodles">Noodles</label>
+						</p>
+						<p>
+							<input type="radio" name="food" id="pizza" value="pizza">
+							<label for="pizza">Pizza</label>
+						</p>
+						<p>
+							<input type="radio" name="food" id="otherFood" value="otherFood">
+							<label for="otherFood">Others</label>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Do you have pets?</legend>
+						<p>
+							<input type="checkbox" name="pets" id="dog" value="dog">
+							<label for="dog">Dog</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="cat" value="cat">
+							<label for="cat">Cat</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="fish" value="fish">
+							<label for="fish">Fish</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="otherPets" value="otherPets">
+							<label for="otherPets">Others</label>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Send Me a Note</legend>
+						<label for="message">Your Message:</label>
+						<br>
+						<textarea name="message" id="message" placeholder="Input your Message"></textarea>
+					</fieldset>
+					<br>
+					<button type="submit">SUBMIT</button>
+					</fieldset>
+				</form>
+			</article>
+
 		</main>
 
 		<hr>
