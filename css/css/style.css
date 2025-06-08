@@ -1,4 +1,32 @@
+body {
+	font-size: 22px;
+}
+
+h1, h2 {
+	color: blue;
+}
+
 p {
-	font-size: 20px;
 	color: purple;
+}
+
+.highlight {
+	text-transform: uppercase;
+	background-color: gold;
+}
+
+/* define a class */
+.gray {
+	color: gray;
+}
+
+/* define an id
+we can do this in js, thus try to avoid this in css */
+/* #second {
+	font-size: italic;
+} */
+
+/* define css of an id */
+#second {
+	font-style: italic;
 }
