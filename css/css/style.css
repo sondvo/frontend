@@ -1,5 +1,23 @@
-body {
+/* Focus on using class ! */
+/* Sematic, well-structure */
+/* CSS works top-down (waterfall) */
+
+html {
 	font-size: 22px;
+}
+
+body {
+
+}
+
+main {
+	font-family: monospace;
+}
+
+/* These elements (in "form" section) do not inherit font
+So, we need to specify this */
+button, input, textarea, select {
+	font: inherit;
 }
 
 h1, h2 {
