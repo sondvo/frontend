@@ -1,0 +1,28 @@
+* {
+	/* margin: 10px; */
+	/* padding: 10; */
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+h1 {
+	border: 2px dashed red;
+	width: 50%;
+	font-size: 3rem;
+	padding: 1em;
+}
+
+main {
+	font-size: 1rem;
+}
+
+/* rem: root scale element
+em: scale based on previous / parent element */
+/* vw: viewpoint width */
+p {
+	font-size: 2rem;
+	width: 50ch;
+}
