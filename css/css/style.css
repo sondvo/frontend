@@ -33,3 +33,12 @@ p {
 	font-style: oblique; */
 	font-style: italic;
 }
+
+.cross {
+	text-decoration: line-through;
+	color: red;
+}
+
+span {
+	color: blue
+}
