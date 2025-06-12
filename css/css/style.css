@@ -1,44 +1,16 @@
-/* tyopgraphy is the way that text is
-arranged and presented */
-
 body {
-	padding: 10%;
-	font-size: 1rem;
-
-	/* fonts.google.com */
-	font-family: monospace;
+	padding: 5% 10%;
+	font-size: 1.5rem;
 }
 
-/* input and button not inherit font size by default */
-input, button {
-	font: inherit
+ol {
+	list-style-type: upper-roman;
 }
 
-
-/* SOOOOOO helpful */
-p {
-	/* helpful for decorating html
-	text-decoration: line-through;
-	text-decoration: underline; */
-
-	/* text-transform: capitalize;
-	text-align: left;
-	text-align: justify; */
-
-	/* text-indent: 2em; */
-	line-height: 1.5;
-	font-weight: lighter;
-
-	/* stronger italic
-	font-style: oblique; */
-	font-style: italic;
-}
-
-.cross {
-	text-decoration: line-through;
+/* ul li {
 	color: red;
-}
+} */
 
-span {
-	color: blue
+ul li:nth-child(2){
+	color: red;
 }
