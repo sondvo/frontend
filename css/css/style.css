@@ -1,0 +1,16 @@
+body {
+	padding: 5% 10%;
+	font-size: 1.5rem;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/* ul li {
+	color: red;
+} */
+
+ul li:nth-child(2){
+	color: red;
+}

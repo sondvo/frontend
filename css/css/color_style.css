@@ -1,0 +1,16 @@
+/* website: coolors.co */
+
+body {
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	background: #ffefd5;
+	/* color: darkblue; */
+	color: rgb(0,0,0);
+}
+
+p {
+	/* color: rgba(0,0,0,1); */
+	/* rgb goes from 00 -> FF */
+	color: #333333;
+}
