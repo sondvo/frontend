@@ -7,10 +7,12 @@ ol {
 	list-style-type: upper-roman;
 }
 
+
+/* specifically color the list item */
 /* ul li {
 	color: red;
 } */
-
 ul li:nth-child(2){
 	color: red;
 }
+
