@@ -1,18 +1,16 @@
 body {
-	padding: 5% 10%;
+	font-family: monospace;
 	font-size: 1.5rem;
 }
 
-ol {
-	list-style-type: upper-roman;
+p {
+	background-color: lightgray;
+	/* margin: 100px 50px; */
 }
 
-
-/* specifically color the list item */
-/* ul li {
-	color: red;
-} */
-ul li:nth-child(2){
-	color: red;
+.opposite {
+	display: inline-block;
+	background-color: #333;
+	color: whitesmoke;
+	padding: 4rem;
 }
-
