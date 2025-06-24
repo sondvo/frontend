@@ -1,6 +1,10 @@
-import { createRoot } from 'react-dom/client'
+import { createRoot } from "react-dom/client"
 
 const root = createRoot(document.getElementById('root'))
 root.render(
-	<h1>Test</h1>
+	<ul>
+		<li>sc-toolkits</li>
+		<li>interactive apps</li>
+		<li>independent</li>
+	</ul>
 )
