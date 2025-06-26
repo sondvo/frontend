@@ -237,3 +237,35 @@ console.log(myObj.hasOwnProperty('bed'));
 // cannot identify string vs integer key
 console.log(myObj.hasOwnProperty(3));
 console.log(myObj.hasOwnProperty('3'));
+
+// Clone a JS object
+// Shallow copy, only top level,
+var original = { a: 1, b: 2 };
+var copy = { ...original };
+// Deep copy
+var original = { a: 1, b: { c: 2 } };
+var copy = structuredClone(original);
+
+
+// While loop
+var myArr = [];
+var i = 0
+while (i < 5) {
+	myArr.push(i);
+	i++;
+}
+console.log(myArr)
+
+// another version with for
+var myArr = [];
+for (var i=0; i<5; i++) {
+	myArr.push(i);
+}
+console.log(myArr)
+
+var myArr = [];
+for (var i=0; i<5;) {
+	myArr.push(i);
+	i ++
+}
+console.log(myArr)
