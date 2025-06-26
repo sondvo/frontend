@@ -187,6 +187,10 @@ function caseInSwitch(val) {
 		case 3:
 			answer = "delta";
 			break;
+		case 4:
+		case 5:
+		case 6:
+			answer = 'omega'
 		default:
 			answer = 'other';
 			break;
@@ -194,3 +198,42 @@ function caseInSwitch(val) {
 	return answer;
 }
 console.log(caseInSwitch(4))
+
+
+// count++ mean plus 1 (depite integer or float)
+var count = 1.5;
+for (var i in [1,2,3]) {
+	count++;
+}
+console.log(count)
+
+
+// JS object
+var ourDog = {
+	"his name": "Camper",
+	"legs": 4,
+	"tails": 1,
+	"friends": ["everything!"]
+};
+console.log(ourDog)
+console.log(ourDog['tails'])
+ourDog['his name'] = 'replacing'
+console.log(ourDog)
+ourDog['2nd name'] = 'Gold'
+console.log(ourDog)
+delete ourDog['2nd name']
+console.log(ourDog)
+
+// find key in object
+var myObj = {
+	"gift": "pony",
+	"pet": "kitten",
+	"bed": "sleigh",
+	3: 'testing',
+};
+console.log(myObj.gift);
+console.log(myObj.hasOwnProperty('bed'));
+// JS object keys are always coerced to strings
+// cannot identify string vs integer key
+console.log(myObj.hasOwnProperty(3));
+console.log(myObj.hasOwnProperty('3'));
