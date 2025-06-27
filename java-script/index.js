@@ -153,14 +153,6 @@ function otherFunction(num) {
 		return 'other thing'
 	}
 }
-function breakStatement(arr) {
-	if (val === 'test') {
-		res == 'no test';
-		break;
-	}
-	return res;
-}
-console.log(breakStatement('test'))
 
 // break statement
 for (var i of [1,2,3]) {
@@ -269,3 +261,27 @@ for (var i=0; i<5;) {
 	i ++
 }
 console.log(myArr)
+
+var myArr = [];
+for (var i=10; i>0; i-=2) {
+	myArr.push(i);
+}
+console.log(myArr)
+
+// iterate through array
+var refArr = ['a', 'b', 'c', 'd', 'e'];
+var myArr = [];
+for (var i=0; i<refArr.length; i++) {
+	myArr.push(refArr[i]);
+}
+console.log(myArr)
+
+
+// Create a random number wihtin a range:
+// 0 -> 10
+Math.floor(Math.random() * 10)
+// 0 -> 20
+Math.floor(Math.random() * 20)
+// 5 -> 15
+// Idea, create from 0 -> 10, then plus 5 @@
+Math.floor(Math.random() * (15 - 5 + 1)) + 5
