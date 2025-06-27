@@ -285,3 +285,44 @@ Math.floor(Math.random() * 20)
 // 5 -> 15
 // Idea, create from 0 -> 10, then plus 5 @@
 Math.floor(Math.random() * (15 - 5 + 1)) + 5
+
+
+//convert to int
+console.log(parseInt('34567'))
+
+
+// shorten function
+function compareNumbers(a, b) {
+	if (a > b) {
+		return 'a is larger than b'
+	} else if (a < b) {
+		return 'a is smaller than b'
+	} else {
+		return 'a is equal to b'
+	}
+}
+
+function compareNumbers(a, b) {
+	return a > b ? "a is larger than b" : a < b ? "a is smaller than b" : "a is equal to b";
+}
+console.log(compareNumbers(5, 5))
+
+
+// var : global variable, replacable
+// let : local variable (highly recommend)
+// const : constant, read-only (except array, object type)
+const var1 = [1,2,3] // this is mutated
+const var2 = { // this is mutated
+	'a': 1,
+	'b': 2,
+	'c': 3
+}
+Object.freeze(var1)		// change to read-only
+Object.freeze(var2)		// change to read-only
+
+
+// function
+function defaultValues (a, b=1) {
+	args = [a, b]
+	return args.reduce((a, b) => a + b, 0)
+}
