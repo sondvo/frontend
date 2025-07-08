@@ -1,28 +1,27 @@
 import { createRoot } from "react-dom/client"
 
 const root = createRoot(document.getElementById('root'))
-
 // React treats lowercase tag names as HTML tags (like <div>, <span>, <main>)
 // React treats Capitalized names as custom components (like <MainContent />)
 
-function MainContent() {
-	return <h1>React is great!</h1>
+
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
 }
 
-	// This might work. But it's not the React way!!!
-	// Use div instead
-// root.render(
-// 	MainContent()
-// )
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
 
 root.render(
-	<div>
-		{/* call the function */}
-		<MainContent />
-	</div>
-)
-
-// or
-root.render(
-	<MainContent />
+	<MyApp />
 )
